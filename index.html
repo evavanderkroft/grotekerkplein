@@ -1,73 +1,5 @@
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-
-<!--    <meta charset="UTF-8">-->
-<!--    <title>IPAP</title>-->
-<!--    <link rel="stylesheet" type="text/css" href="style.css"/>-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-<!--    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">-->
-<!--    <link rel="icon" href="images/favicon.ico" type="image/x-icon">-->
-
-<!--</head>-->
-<!--<body>-->
-<!--    <div class="navbar">-->
-<!--<ul>-->
-<!--    <li><a class="nav-item">IPAP</a></li>-->
-<!--    <li><a class="nav-item">Beloning</a></li>-->
-<!--    <li><a class="nav-item">Delen</a></li>-->
-<!--    <li><a class="nav-item">Contact</a></li>-->
-<!--</ul>-->
-<!--    </div>-->
-
-<!--<h1>IPAP</h1>-->
-
-<!--<h2>Interactief Pratende Afval Paal</h2>-->
-
-<!--<img src="images/IPAP.jpeg">-->
-
-<!--<h3>Kies je beloning!</h3>-->
-
-<!--<button class="button">weer</button>-->
-<!--<button class="button">spreuk</button>-->
-<!--<button class="button">info kerk</button>-->
-
-<!--<p class="weer">het weerbericht is....</p>-->
-<!--<p class="spreuk">uw spreuk is....</p>-->
-<!--<p class="kerk">de kerk is opgericht in...</p>-->
-
-<!--<img src="images/tree.gif">-->
-
-<!--<div class="linkjes">-->
-<!--    <p> Deel het met je vrienden! </p>-->
-<!--<a href="#" class="fa fa-whatsapp"></a>-->
-<!--<a href="#" class="fa fa-facebook"></a>-->
-<!--<a href="#" class="fa fa-instagram"></a>-->
-<!--<a href="#" class="fa fa-twitter"></a>-->
-<!--</div>-->
-
-<!--<footer>-->
-<!--&lt;!&ndash;   <div class="links">&ndash;&gt;-->
-<!--&lt;!&ndash;    <img class="linkerfoto" src="images/logo_prullenbak%20.png">&ndash;&gt;-->
-<!--&lt;!&ndash;   </div>&ndash;&gt;-->
-<!--    <div class="rechts">-->
-<!--        <p> IPAP</p>-->
-<!--        <p> hogeschool rotterdam Creative Media & game technologies </p>-->
-<!--    </div>-->
-
-
-<!--</footer>-->
-
-
-<!--</body>-->
-
-<!--</head>-->
-<!--</html>-->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 
     <meta charset="UTF-8">
@@ -77,103 +9,88 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,700|Satisfy&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
-<div class="navbar">
-    <ul>
-        <li><a class="nav-item">IPAP</a></li>
-        <li><a class="nav-item" id="1" href="#Section1">Beloning</a></li>
-        <li><a class="nav-item" id="2" href="#Section2">Delen</a></li>
-        <li><a class="nav-item" id="3" href="#Section3">Contact</a></li>
-    </ul>
-</div>
-<h1>IPAP</h1>
-
-<h2>Interactief Pratende Afval Paal</h2>
-
-<img src="images/IPAP.jpeg">
-
-<div class="buttons" id="Section1">
-<h3>Kies je beloning!</h3>
-
-<button class="button" onclick="myFunction()">Weer</button>
-<button class="button" onclick="myFunction1()">Spreuk</button>
-<button class="button" onclick="myFunction2()">Kerk</button>
-</div>
-<p class="weer" id="demo"></p>
-<script>
-    function myFunction() {
-        document.getElementById("demo").innerHTML = "Het weerbericht van vandaag is...";
-    }
-</script>
-
-<p class="spreuk" id="demo1"></p>
-<script>
-    function myFunction1() {
-        document.getElementById("demo1").innerHTML = "Uw spreuk is...";
-    }
-</script>
-
-<p class="kerk" id="demo2"></p>
-<script>
-    function myFunction2() {
-        document.getElementById("demo2").innerHTML = "De kerk is opgericht in...";
-    }
-</script>
-
-<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+<!--The navigational tab -->
+<nav>
+    <div class="navbar">
+        <a class="nav-item">IPAP</a>
+        <a class="nav-item" id="1" href="#Section1"> Beloning</a>
+        <a class="nav-item" id="2" href="#Section2">Delen</a>
+        <a class="nav-item" id="3" href="#Section3">Contact</a>
+    </div>
+</nav>
 
 
-<script>
-    //Get the button
-    var mybutton = document.getElementById("myBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
-
-<img class="gif" src="images/tree.gif">
-
-<div class="linkjes" id="Section2">
-    <p> Deel het met je vrienden! </p>
-    <a href="#" class="fa fa-whatsapp"></a>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-instagram"></a>
-    <a href="#" class="fa fa-twitter"></a>
+<!--the title section-->
+<div class="title">
+    <h1>IPAP</h1>
+    <h2>Interactief Pratende Afval Paal</h2>
+    <img class= "image-ipap" src="images/IPAP.jpeg">
 </div>
 
-<footer>
-    <!--   <div class="links">-->
-    <!--    <img class="linkerfoto" src="images/logo_prullenbak%20.png">-->
-    <!--   </div>-->
-    <div class="rechts" id="Section3">
-        <p> IPAP</p>
-        <p> Creative Media & Game Technologies </p>
-        <p> Hogeschool Rotterdam </p>
+<!--The reward buttons. Click on them and you will see your reward. -->
+<section class="rewards" id="Section1">
+    <h3>Kies je beloning! </h3>
+    <div class="buttons" >
+        <button class="button" id="weer">Weer</button>
+        <button class="button" id="quote">Spreuk</button>
+        <button class="button" onclick="NewQuote2()" id="kerk">Kerk</button>
     </div>
 
+    <div class="beloningen">
+        <p class="beloning-tekst" id="demo1"></p>
+        <p class="beloning-tekst" id="answer"></p>
+    </div>
 
+    <div class="newQuote" id="addNewQuote">
+        <p class="titelNewQuote"> Voeg je eigen spreuk toe!</p>
+        <input type="text" id="newQuote" class="quoteInput">
+        <button class="submitButton" id="submitQuote">Spreuk toevoegen</button>
+        <button class="deleteButton" id="delete">Al je eigen spreuken verwijderen</button>
+    </div>
+</section>
+
+
+<!-- A Gif.-->
+<img class="gif" src="images/tree.gif">
+
+
+<div class="share-text">
+    <h4> Deel het met je vrienden! </h4>
+</div>
+
+<!-- the share buttons. Click on them and you will send a link of the site to your social media. -->
+<section class="share" id="Section2">
+    <div class="linkjes">
+        <a href="https://api.whatsapp.com/send?text=http://localhost/grotekerkplein/index.html#Section2"
+           class="fa fa-whatsapp" data-count="vertical" data-lang="en"></a>
+        <a href="https://facebook.com/share" class="fa fa-facebook" data-count="vertical" data-lang="en"></a>
+        <a href="https://www.linkedin.com/uas/login?session_redirect=https://localhost/grotekerkplein/index.html"
+           class="fa fa-linkedin" data-count="vertical" data-lang="en"></a>
+        <a href="https://twitter.com/share" class="fa fa-twitter" data-count="vertical" data-lang="en"></a>
+    </div>
+</section>
+
+<!--The footer. This is the end of the page. Mostly with links or your contacts. -->
+<footer>
+    <section class="footer">
+<!--        <img class="logo" src="images/logo_prullenbak%20.png">-->
+        <div class="rechts" id="Section3">
+            <p> IPAP</p>
+            <p> Creative Media & Game Technologies </p>
+            <p> Hogeschool Rotterdam </p>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="Back-to-top">Back to top</button>
 
 </footer>
-
-
+<!--<script src="script.js" type="application/javascript"></script>-->
+<script src="eva_script.js" type="application/javascript"></script>
 </body>
-
-</head>
 </html>
 

@@ -1,61 +1,115 @@
-/*!* Set the background color of body to tan *!*/
-/*html, body {*/
-/*    text-align: center;*/
-/*    margin:0;*/
-/*    padding:0;*/
 
 
-/*}*/
-/*!* On screens that are 992px or less, set the background color to blue *!*/
-/*@media screen and (max-width: 992px) {*/
 
-/*}*/
+html, body {
+    text-align: center;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    font-family: 'Advent Pro', sans-serif;
+    box-sizing: border-box;
+}
+.navbar{
+    text-decoration: none;
+    display: flex;
+    display:-webkit-flex;
+}
 
-/*!* On screens that are 600px or less, set the background color to olive *!*/
-/*@media screen and (max-width: 600px) {*/
+.nav-item {
+    flex:1;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    border:none;
+}
 
-/*}*/
+.nav-item:hover {
+    background-color: darkred;
+    opacity: 0.6;
+    flex:1;
+}
 
-/*h1 {*/
-/*    font-size: 50px;*/
-/*}*/
+title {
+    display: flex;
+    justify-content: center;
+}
 
-/*h2 {*/
-/*    font-size: 25px;*/
-/*}*/
+h1 {
+    font-size: 50px;
+    font-family: 'Satisfy', cursive;
 
-/*h3 {*/
-/*    font-size: 25px;*/
-/*}*/
+}
 
-/*p.weer {*/
-/*    text-align: left;*/
-/*    margin-left: 400px;*/
+h2 {
+    font-size: 40px;
+    font-family: 'Satisfy', cursive;
+}
 
-/*}*/
+h3 {
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+}
 
-/*p.spreuk {*/
-/*    text-align: center;*/
-/*    margin-top: -32px;*/
+h4{
+    font-size: 25px;
+    font-family: 'Satisfy', cursive;
+}
 
-/*}*/
-
-/*p.kerk {*/
-/*    text-align: right;*/
-/*    margin-right: 380px;*/
-/*    margin-top: -32px;*/
-
-/*}*/
+p.beloningen-tekst {
+    font-family: 'Advent Pro', sans-serif;
+}
 
 
-/*img {*/
-/*    display: block;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*    width: 25%;*/
-/*    height: auto;*/
-/*}*/
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    max-width: 100px;
+    flex:33%;
+    font-family: 'Advent Pro', sans-serif;
 
+}
+
+.rewards{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 5%;
+}
+
+.buttons{
+    justify-content: space-evenly;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beloningen{
+    margin-top: 20px;
+    font-family: 'Advent Pro', sans-serif;
+    margin-bottom: 30px;
+}
+img{
+    /*display: block;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+    display:flex;
+}
+
+
+img.gif {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /*ul {*/
 /*    list-style-type: none;*/
@@ -80,253 +134,25 @@
 
 /*}*/
 
-/*.navbar{*/
-/*    width: 100%;*/
-/*    overflow: auto;*/
-/*    box-sizing: border-box;*/
-/*    overflow-x:hidden;*/
-/*}*/
-
-/*.nav-item {*/
-/*    display: inline-block;*/
-/*    color: white;*/
-/*    text-align: center;*/
-/*    padding-left: 147px;*/
-/*    padding-right: 147px;*/
-/*    padding-top: 50px;*/
-/*    padding-bottom: 50px;*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/*.nav-item:hover {*/
-/*    background-color: #111;*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/*.button {*/
-/*    background-color: #4CAF50; !* Green *!*/
-/*    border: none;*/
-/*    color: white;*/
-/*    padding: 20px;*/
-/*    text-align: center;*/
-/*    text-decoration: none;*/
-/*    display: inline-block;*/
-/*    font-size: 16px;*/
-/*    margin: 4px 100px;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.button {border-radius: 50%;}*/
 
 /*.linkjes{*/
 /*    padding: 20px;*/
-/*}*/
-
-/*p.linkjes{*/
-/*    font-size:200px;*/
-/*}*/
-
-/*.fa {*/
-/*    font-size: 30px;*/
-/*    width: 30px;*/
-/*    text-align: center;*/
-/*    text-decoration: none;*/
-/*   // margin: 5px 2px;*/
-/*    border-radius: 50%;*/
-/*    padding: 20px;*/
-/*    display: inline-block;*/
-/*    margin: 4px 100px;*/
-/*}*/
-
-/*.fa:hover {*/
-/*    opacity: 0.7;*/
-/*}*/
-
-/*.fa-facebook {*/
-/*    background: #3B5998;*/
-/*    color: white;*/
-/*}*/
-
-/*.fa-twitter {*/
-/*    background: #55ACEE;*/
-/*    color: white;*/
-/*}*/
-
-/*.fa-instagram {*/
-/*    background: #125688;*/
-/*    color: white;*/
-/*}*/
-
-/*.fa-whatsapp {*/
-/*    background-color:#25d366;*/
-/*    color:#FFF;*/
-/*}*/
-
-/*footer{*/
-/*    background-color: #4CAF50;*/
-/*    padding: 20px;*/
-/*    text-align: center;*/
-/*}*/
-
-/*.links{*/
-/*    float:left;*/
-/*}*/
-
-/*.rechts{*/
-/*    text-align: center;*/
-/*}*/
-
-/*.linkerfoto{*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    margin-left: 30px;*/
-/*}*/
-
-/* Set the background color of body to tan */
-html, body {
-    text-align: center;
-    margin:0;
-    padding:0;
-    scroll-behavior: smooth;
-
-}
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
-
-}
-
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-
-}
-
-h1 {
-    font-size: 50px;
-}
-
-h2 {
-    font-size: 25px;
-}
-
-h3 {
-    font-size: 25px;
-}
-
-p.weer {
-    text-align: left;
-    margin-left: 400px;
-
-}
-
-p.spreuk {
-    text-align: center;
-    margin-top: -20px;
-
-}
-
-p.kerk {
-    text-align: right;
-    margin-right: 380px;
-    margin-top: -20px;
-
-}
 
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    height: auto;
-}
-
-img.gif {
-    margin-top: 100px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    overflow:auto;
-    display: inline-block;
-    margin: 0 auto;
-    width:100vw;
-
-    /*background-color: #4CAF50;*/
-}
-
-li {
-    float: left;
-    background-color: #4CAF50;
-    box-sizing: border-box;
-    overflow-x:hidden;
-    width: 25%;
-    /*margin: 0 auto;*/
-    text-align: center;
-    position:relative;
-
-}
-
-.navbar{
-    width: 100%;
-    overflow: auto;
-    box-sizing: border-box;
-    overflow-x:hidden;
-}
-
-.nav-item {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding-left: 147px;
-    padding-right: 147px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    box-sizing: border-box;
-}
-
-.nav-item:hover {
-    background-color: #111;
-    box-sizing: border-box;
-}
-
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 100px;
-    cursor: pointer;
-}
-
-#1{
-
-}
-
-.button {border-radius: 50%;}
-
-.linkjes{
+.share{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
 }
-
-p.linkjes{
-    font-size:200px;
-}
-
 .fa {
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
     text-decoration: none;
-// margin: 5px 2px;
-    border-radius: 50%;
+    color: white;
     padding: 20px;
-    display: inline-block;
+    flex:25%;
     margin: 4px 100px;
+    border-radius: 50%;
+    width: 30px;
 }
 
 .fa:hover {
@@ -343,23 +169,32 @@ p.linkjes{
     color: white;
 }
 
-.fa-instagram {
+.fa-linkedin {
     background: #125688;
     color: white;
 }
 
 .fa-whatsapp {
     background-color:#25d366;
-    color:#FFF;
+    color:white;
 }
 
-footer{
+.footer{
     background-color: #4CAF50;
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
+
+.back-to-top{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #myBtn {
-    display: none;
+    display: flex;
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -367,7 +202,8 @@ footer{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: red;
+    background-color: darkred;
+    opacity: 0.6;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -375,15 +211,15 @@ footer{
 }
 
 #myBtn:hover {
-    background-color: #555;
+    background-color: red;
+    opacity: 1;
 }
 
-.links{
-    float:left;
-}
+
 
 .rechts{
     text-align: center;
+    align-self: center;
 }
 
 .linkerfoto{
@@ -391,3 +227,122 @@ footer{
     height: 100px;
     margin-left: 30px;
 }
+
+
+#addNewQuote{
+    /*display: none;*/
+    visibility: hidden;
+}
+
+.newQuote{
+    display: none;
+    width:50%;
+    justify-self: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titelNewQuote{
+    text-align: center;
+    width: 100%;
+}
+
+.quoteInput{
+    width: 100%;
+    /*padding: 12px 20px;*/
+    /*margin: 8px 0;*/
+    box-sizing: border-box;
+     margin-bottom:20px;
+    padding: 10px;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 18px;
+
+}
+
+
+.submitButton{
+    flex:1;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    border:none;
+    opacity:0.8;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px;
+
+}
+
+.deleteButton{
+    flex:1;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    background-color: darkred;
+    opacity: 0.6;
+    font-family: 'Advent Pro', sans-serif;
+    border:none;
+}
+.deleteButton:hover{
+background-color: darkred;
+opacity: 0.8;
+flex:1;}
+
+.submitButton:hover{
+    background-color:#4CAF50;
+    opacity: 1;
+    flex:1;
+}
+
+
+
+
+
+/* On screens that are 992px or less */
+@media screen and (max-width: 992px) {
+    html, body{
+        background-color: #DAF5CD;
+        color: black;
+    }
+    img.gif{
+        width:60%;
+    }
+    .newQuote{
+        width:60%;
+    }
+
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+
+    html, body{
+        background-color: #DAF5CD;
+    }
+
+    img{
+        width:80%
+    }
+
+    img.gif{
+        width: 80%;
+    }
+    .fa{
+        flex-direction: row;
+        margin:2px;
+    }
+
+    #myBtn{
+    font-size: 13px;
+        width: 65px;
+        height: 65px;
+        right:20px;
+    }
+    .newQuote{
+        width:80%;
+    }
+}
+
